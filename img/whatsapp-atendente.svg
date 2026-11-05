@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="WhatsApp Atendente — bot de agendamento com IA">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1613"/>
+      <stop offset="0.55" stop-color="#0b0f0d"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="wa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38e07d"/>
+      <stop offset="1" stop-color="#0f8b4a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0b560"/>
+      <stop offset="1" stop-color="#cc9933"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#25d366" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#25d366" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGold" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#cc9933" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#cc9933" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+    <clipPath id="bubbleClip">
+      <rect x="120" y="170" width="720" height="560" rx="44"/>
+    </clipPath>
+  </defs>
+
+  <!-- fundo -->
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#dots)"/>
+  <ellipse cx="470" cy="430" rx="520" ry="430" fill="url(#glow)"/>
+  <ellipse cx="1240" cy="700" rx="420" ry="360" fill="url(#glowGold)"/>
+
+  <!-- balão de conversa -->
+  <g>
+    <rect x="120" y="170" width="720" height="560" rx="44" fill="#12241b" stroke="url(#wa)" stroke-width="4"/>
+    <g clip-path="url(#bubbleClip)">
+      <rect x="120" y="170" width="720" height="96" fill="url(#wa)"/>
+    </g>
+
+    <!-- cabeçalho do balão: ícone + título -->
+    <g transform="translate(166,196)">
+      <circle cx="26" cy="22" r="24" fill="#0b0f0d" fill-opacity="0.35"/>
+      <path d="M14 12c-1.5 6 1 13 7 18 5 4 11 6 16 5l4-4-7-5-3 3c-3-1.5-6-4.5-8-8l3-3-5-7z" fill="#ffffff"/>
+      <text x="68" y="31" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="700" fill="#06170e">WhatsApp Atendente</text>
+    </g>
+
+    <!-- mensagens -->
+    <g font-family="Inter, system-ui, sans-serif">
+      <rect x="170" y="310" width="430" height="86" rx="22" fill="#1d3a2c"/>
+      <text x="200" y="352" font-size="27" fill="#e8f6ee">Olá! Quero agendar uma consulta 😊</text>
+      <text x="200" y="384" font-size="22" fill="#9fc7b2">cliente · 14:02</text>
+
+      <rect x="340" y="430" width="450" height="132" rx="22" fill="url(#wa)"/>
+      <text x="372" y="474" font-size="27" font-weight="600" fill="#06170e">Claro! Temos horários hoje</text>
+      <text x="372" y="512" font-size="27" font-weight="600" fill="#06170e">às 15:30 e 17:00.</text>
+      <text x="372" y="548" font-size="22" fill="#0a3b23">IA · respondido em 0,8s</text>
+
+      <rect x="170" y="596" width="330" height="80" rx="22" fill="#1d3a2c"/>
+      <text x="200" y="644" font-size="27" fill="#e8f6ee">Pode ser 15:30 ✅</text>
+    </g>
+
+    <!-- pontinhos de digitação -->
+    <g fill="#4f7f66">
+      <circle cx="196" cy="716" r="9"/>
+      <circle cx="232" cy="716" r="9"/>
+      <circle cx="268" cy="716" r="9"/>
+    </g>
+  </g>
+
+  <!-- núcleo de IA à direita -->
+  <g>
+    <circle cx="1230" cy="470" r="150" fill="#0f1a15" stroke="url(#gold)" stroke-width="3"/>
+    <g stroke="url(#gold)" stroke-width="3" stroke-opacity="0.75" fill="none">
+      <path d="M1230 320 L1230 250"/>
+      <path d="M1360 400 L1430 350"/>
+      <path d="M1370 545 L1440 600"/>
+      <path d="M1230 620 L1230 690"/>
+      <path d="M1100 545 L1035 600"/>
+      <path d="M1100 400 L1035 350"/>
+    </g>
+    <g fill="url(#gold)">
+      <circle cx="1230" cy="250" r="17"/>
+      <circle cx="1430" cy="350" r="17"/>
+      <circle cx="1440" cy="600" r="17"/>
+      <circle cx="1230" cy="690" r="17"/>
+      <circle cx="1035" cy="600" r="17"/>
+      <circle cx="1035" cy="350" r="17"/>
+    </g>
+    <path d="M1188 470 l30 -34 l24 26 l30 -44" stroke="url(#wa)" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1230" cy="470" r="150" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+  </g>
+
+  <!-- chip de calendário (agendamento) -->
+  <g transform="translate(960,740)">
+    <rect width="470" height="140" rx="30" fill="#141414" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+    <rect x="30" y="30" width="80" height="80" rx="18" fill="url(#gold)"/>
+    <rect x="44" y="52" width="52" height="44" rx="8" fill="#120e05"/>
+    <rect x="52" y="42" width="8" height="20" rx="4" fill="#120e05"/>
+    <rect x="80" y="42" width="8" height="20" rx="4" fill="#120e05"/>
+    <text x="140" y="70" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#f4f1ea">Google Calendar</text>
+    <text x="140" y="108" font-family="Inter, system-ui, sans-serif" font-size="24" fill="rgba(244,241,234,0.55)">confirmado em tempo real</text>
+  </g>
+
+  <!-- rodapé sutil -->
+  <text x="120" y="930" font-family="Inter, system-ui, sans-serif" font-size="26" fill="rgba(244,241,234,0.35)">Evolution API · FastAPI · Docker</text>
+</svg>

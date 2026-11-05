@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Mapa Mental TEA — educação inclusiva">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#131019"/>
+      <stop offset="0.55" stop-color="#0d0c11"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0b560"/>
+      <stop offset="1" stop-color="#cc9933"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6fd3d8"/>
+      <stop offset="1" stop-color="#3a8f9b"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#cc9933" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#cc9933" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <ellipse cx="800" cy="500" rx="620" ry="470" fill="url(#halo)"/>
+
+  <!-- conexões -->
+  <g fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="3" stroke-linecap="round">
+    <path d="M800 500 C 640 430, 520 360, 380 300"/>
+    <path d="M800 500 C 980 430, 1110 370, 1240 300"/>
+    <path d="M800 500 C 620 560, 500 640, 350 700"/>
+    <path d="M800 500 C 990 570, 1120 640, 1270 700"/>
+    <path d="M800 500 C 790 650, 780 760, 780 860"/>
+  </g>
+  <g fill="rgba(204,153,51,0.55)">
+    <circle cx="590" cy="428" r="7"/>
+    <circle cx="1020" cy="432" r="7"/>
+    <circle cx="576" cy="576" r="7"/>
+    <circle cx="1046" cy="580" r="7"/>
+    <circle cx="792" cy="676" r="7"/>
+  </g>
+
+  <!-- nós satélites -->
+  <g font-family="Inter, system-ui, sans-serif" text-anchor="middle">
+    <g>
+      <rect x="180" y="245" width="400" height="110" rx="26" fill="#141414" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+      <text x="380" y="300" font-size="34" font-weight="700" fill="#f4f1ea">Legislação</text>
+      <text x="380" y="336" font-size="24" fill="rgba(244,241,234,0.5)">LBI · Decreto 6.949</text>
+    </g>
+    <g>
+      <rect x="1050" y="245" width="400" height="110" rx="26" fill="#141414" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+      <text x="1250" y="300" font-size="34" font-weight="700" fill="#f4f1ea">Estratégias</text>
+      <text x="1250" y="336" font-size="24" fill="rgba(244,241,234,0.5)">sala inclusiva</text>
+    </g>
+    <g>
+      <rect x="160" y="645" width="400" height="110" rx="26" fill="#141414" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+      <text x="360" y="700" font-size="34" font-weight="700" fill="#f4f1ea">Adaptações</text>
+      <text x="360" y="736" font-size="24" fill="rgba(244,241,234,0.5)">avaliação e rotina</text>
+    </g>
+    <g>
+      <rect x="1080" y="645" width="400" height="110" rx="26" fill="#141414" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+      <text x="1280" y="700" font-size="34" font-weight="700" fill="#f4f1ea">Export PDF</text>
+      <text x="1280" y="736" font-size="24" fill="rgba(244,241,234,0.5)">A4 · A3 · alta definição</text>
+    </g>
+    <g>
+      <rect x="590" y="805" width="400" height="110" rx="26" fill="#141414" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+      <text x="790" y="860" font-size="34" font-weight="700" fill="#f4f1ea">Acessível</text>
+      <text x="790" y="896" font-size="24" fill="rgba(244,241,234,0.5)">zoom · pan · apresentação</text>
+    </g>
+  </g>
+
+  <!-- nó central -->
+  <g>
+    <circle cx="800" cy="500" r="152" fill="#0f0d13" stroke="url(#gold)" stroke-width="5"/>
+    <circle cx="800" cy="500" r="128" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="2"/>
+    <text x="800" y="478" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="800" text-anchor="middle" fill="url(#gold)">TEA</text>
+    <text x="800" y="532" font-family="Inter, system-ui, sans-serif" font-size="27" text-anchor="middle" fill="rgba(244,241,234,0.68)">mapa mental</text>
+    <text x="800" y="568" font-family="Inter, system-ui, sans-serif" font-size="23" text-anchor="middle" fill="rgba(111,211,216,0.85)">educação inclusiva</text>
+  </g>
+</svg>
